@@ -53,3 +53,12 @@ def get_superheroes():
     
     # Retorna la lista en formato JSON
     return rows
+
+@app.get("/cursosPlatzi")
+def get_cursos():
+    
+    # Lista de nombres de cursos de Platzi
+    rows = ["Docker", "Bash", "Python", "JavaScript", "Data Science", "Machine Learning"]
+    
+    # Retorna la lista en formato JSON
+    return rows
