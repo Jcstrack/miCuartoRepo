@@ -44,3 +44,12 @@ def get_superheroes():
     
     # Retorna la lista en formato JSON
     return rows
+
+@app.get("/superheroesMarvel")
+def get_superheroes():
+    
+    # Lista de nombres de superhéroes de Marvel
+    rows = ["Spider-Man", "Iron Man", "Captain America", "Thor", "Hulk", "Black Widow"]
+    
+    # Retorna la lista en formato JSON
+    return rows
