@@ -1,0 +1,15 @@
+# Framework principal para construir APIs modernas en Python
+# Maneja rutas, requests, responses y lógica del backend
+# Funciona sobre ASGI, lo que permite alto rendimiento y manejo asíncrono
+fastapi
+
+# Servidor ASGI que ejecuta la aplicación FastAPI
+# ASGI (Asynchronous Server Gateway Interface) es el estándar que permite
+# manejar múltiples conexiones de forma asíncrona (no bloqueante),
+# ideal para APIs modernas, websockets y alta concurrencia
+# [standard] incluye mejoras de rendimiento como uvloop y httptools
+uvicorn[standard]
+
+# Librería para validación de datos y definición de esquemas
+# Se usa para validar inputs y estructurar datos (muy integrada con FastAPI)
+pydantic
